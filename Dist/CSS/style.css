@@ -1,0 +1,20 @@
+.header {
+    font-family: 'Times New Roman', Times, serif
+}
+
+p {
+        display: inline-block;
+    width: 33%;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+.div1 {
+    width: 2000px;
+    border: ;
+}
