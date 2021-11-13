@@ -1,0 +1,110 @@
+.header {
+    text-align: center;
+    font-size: 90px;
+    color: grey;
+    text-transform: uppercase;
+}
+
+p {
+    display: inline-block;
+}
+
+.left {
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    width: 10%;
+}
+
+.center {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    width: 75%;
+}
+
+.right {
+    font-size: 80%;
+    color: white;
+    text-align: right;
+    width: 10%;
+}
+
+.box {
+    width: 97%;
+    background-color: blue;
+}
+
+.box2 {
+    text-transform: uppercase;
+    color: grey;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 300%;
+}
+.box3 {
+    text-align: center;
+    font-size: 30px;
+    border-style: dotted;
+    display: inline-block;
+    width: 90%;
+    height: 5cm;
+    text-shadow: red;
+}
+
+.coupon {
+    margin-top: auto;
+    text-align: center;
+    text-transform:capitalize ;
+    color: red;
+
+}
+
+.box4 {
+    height: 15cm;
+    background-color: skyblue;
+    width: 30%;
+    display: inline-block;
+}
+
+.main {
+    display: inline-block;
+    width: 95%;
+}
+.insider{
+    width: 100%;
+}
+.img {
+    width: 100%;
+    display: inline-block;
+}
+
+.paragraph {
+    text-align: left;
+    color: red;
+    font-weight: bold;
+}
+.box5 {
+    height: 15cm;
+    background-color: steelblue;
+    text-align: left;
+    width: 30%;
+    display: inline-block;
+}
+.box6 {
+    height: 15cm;
+    background-color: springgreen;
+    text-align: left;
+    width: 30%;
+    display: inline-block;
+}
+
+.link {
+    color: rgb(255, 255, 255);
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,20 +1,38 @@
-.header {
-    font-family: 'Times New Roman', Times, serif
+.box {
+    border-bottom: 1px solid grey;
+    margin: 0;
+    margin-bottom: 3px;
 }
-
-p {
-        display: inline-block;
-    width: 33%;
+box p {
+    margin-bottom: 0;
 }
-
+.main {
+    width: 95%;
+}
+.box p {
+    display: inline-block;
+}
 .left {
-    text-align: left;
+    width: 90%;
+}
+
+.footer {
+    border-top: 1px solid grey;
+    
+}
+h1,
+h2,
+.left,
+.right {
+text-transform: capitalize;
+}
+.left {
+    font-weight: bold;
 }
 
 .right {
-    text-align: right;
+    font-style: italic;
 }
-.div1 {
-    width: 2000px;
-    border: ;
+.link {
+    color: rgb(0, 161, 13);
 }
