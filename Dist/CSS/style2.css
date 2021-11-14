@@ -62,49 +62,51 @@ p {
 }
 
 .box4 {
+    float: left;
     height: 15cm;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     width: 30%;
     display: inline-block;
 }
-
-.main {
-    display: inline-block;
-    width: 95%;
-}
-.insider{
-    width: 100%;
-}
-.img {
-    width: 100%;
-    display: inline-block;
-}
-
-.paragraph {
-    text-align: left;
-    color: red;
-    font-weight: bold;
-}
 .box5 {
+    float: left;
     height: 15cm;
-    background-color: steelblue;
+    /* background-color: steelblue; */
     text-align: left;
     width: 30%;
     display: inline-block;
 }
 .box6 {
+    float: left;
     height: 15cm;
-    background-color: springgreen;
+    /* background-color: springgreen; */
     text-align: left;
     width: 30%;
     display: inline-block;
 }
+.img {
+    width: 370px;
+    margin-left: 1cm;
+}
+.main {
+    display: inline-block;
+    width: 95%;
+}    
+.paragraph {
+    
+    margin: 1cm;
+    text-align: left;
+    color: red;
+    font-weight: bold;
+}
+
 
 .link {
     color: rgb(255, 255, 255);
 }
 
 .title {
+    margin: 150px;
     text-align: center;
     font-weight: bold;
 }
