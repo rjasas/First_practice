@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+    font-family: 'Montagu Slab', serif;
+    margin: 0;
+    padding: 0;
+}
+.section {
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.name {
+    color: white;
+    width: 100%;
+    height: 200px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.mainBox {
+    width: 80%;
+    height: 800px;
+    background-color: lightgreen;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.box {
+    width:20%;
+    padding: 0;
+    margin: 15px 0;
+    text-align: center;
+    /* display: flex;*/
+    background-color: #58a851;    
+}
+
+
+img {
+    width: 100%;
+    height: 300px;
+}
+
+.birdsName {
+    text-transform: capitalize;
+    color: white;
+    margin: 20px;
+    text-align: left;
+    font-family: 'Montagu Slab', serif;
+}
+
+.title {
+    height: 250px;
+    color: white;
+    margin: 20px 10px;
+    font-family: 'Montagu Slab', serif;
+}
+
+.button {
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 20px 50px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    font-family: 'Montagu Slab', serif;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* font-family: 'Montagu Slab', serif; */
