@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+
+.column {
+    height: 100%;
+    width: 32%;
+    padding: 25px 0;
+}
+
+.imgBlock {
+    position: relative;
+}
+
+.imgBlock,
+.imgBlock .overlay,
+.imgBlock .image,
+.imgBlock .greenLayer {
+    height: 100%;
+    width: 100%;
+}
+
+.imgBlock .overlay,
+.imgBlock .image,
+.imgBlock .greenLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    opacity: 0;
+}
+
+.img {
+    z-index: 2;
+    overflow: hidden;
+}
