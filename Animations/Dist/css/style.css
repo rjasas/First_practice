@@ -1,0 +1,87 @@
+/* @keyframes animacijosPavadinimas {
+    from {savybe: reiksme;}
+    to {savybe: reiksme;}
+}
+
+selektorius {
+    animation-name: animacijosPavadinimas;
+    animation-duration: 5s;
+} */
+
+@keyframes colors {
+    from {background-color: red; top: 100px; left: 100px;}
+    to {background-color: blue; top: 200px; left: 200px;}  
+}
+
+@keyframes spin {
+    0% {background-color: red; top: 500px; left: 500px;}
+    25% {background-color: yellow; top: 700px; left: 500px;}
+    50% {background-color: blue; top: 700px; left: 700px;}
+    75% {background-color: green; top: 700px; left: 500px;}
+    100% {background-color: red; top: 500px; left: 500px;}
+}
+
+
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    animation: colors;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+
+    animation: colors 5s infinite alternate ease;
+}
+
+.box1 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    animation: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+@keyframes loader {
+    0% {background-color: red; border-radius: 0px;}
+    25% {background-color: yellow; transform: rotate(90deg); border-radius: 200px; transform: scale(50%);}
+    50% {background-color: blue; transform: rotate(180deg); border-radius: 0px; transform: scale(100%);}
+    75% {background-color: green; transform: rotate(270deg);border-radius: 200px;}
+    100% {background-color: red; transform: rotate(360deg); border-radius: 0px;}
+}
+
+.loader {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    animation: loader 5s infinite;
+    animation: loader 5s infinite alternate ease;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px blue, 0 0 25px red;
+}
+
+.box2 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    box-shadow: 10px 10px 5px 15px grey;
+}

@@ -5,10 +5,16 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFFFFF url(./birds/Dist/img/background.png) repeat;
+    background: url(../img/background.png) repeat center top;
     font-family: 'Nova Mono', monospace;
     font-size: 14px;
     color: #808080;
+}
+
+.triangle a {
+    background: url(../img/toolbar.png) no-repeat center bottom;
+    height: 35px;
+    padding-bottom: 10px;
 }
 
 .section {
@@ -60,6 +66,7 @@ h1 {
 .toolbar a {
     color: #808080;
     text-decoration: none;
+    height: 35px;
 }
 
 .mainContainer {
@@ -141,21 +148,26 @@ h1 {
 }
 
 footer {
-    width: 50%;
+    width: 100%;
     height: 50px;
     font-size: 17px;
-    margin: 0 auto;
     /* border: 1px solid black; */
     text-align: center;
-    display: flex;
-    align-items: center;
-    padding-left: 30%;
+    display: block;
+    overflow: auto;
+    padding-top: 20px;
 }
 
 footer a {
     text-transform: uppercase;
     text-decoration: none;
     color: #808080;
+}
+
+.sideBar li {  
+    list-style: none;
+    background: url(../img/list.png) no-repeat left 13px;
+    padding-left: 20px;
 }
 /* .toolbar li img { */
 /* } */

@@ -29,14 +29,14 @@ body {
 
 .imgBlock,
 .imgBlock .overlay,
-.imgBlock .image,
+.imgBlock .img,
 .imgBlock .greenLayer {
     height: 100%;
     width: 100%;
 }
 
 .imgBlock .overlay,
-.imgBlock .image,
+.imgBlock .img,
 .imgBlock .greenLayer {
     position: absolute;
     top: 0;
@@ -47,13 +47,92 @@ body {
     background-color: black;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 3;
     opacity: 0;
+    transition: 1s ease-in-out;
+
 }
 
 .img {
     z-index: 2;
     overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.imgBlock .img img {
+    height: 100%;
+    width: 100%;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.imgBlock .greenLayer {
+    background-color: #95e1d3;
+    z-index: 1;
+}
+
+.imgBlock:hover .overlay {
+    background-color: rgba(243, 129, 129, 0.75);
+    opacity: 1;
+    transform: translate(-10px, -10px);
+}
+
+.imgBlock:hover .img {
+    transform: translate(-10px, -10px);
+}
+
+.imgBlock .overlay {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+
+/* ------------------BUTTON---------------------------- */
+
+.switchContainer {
+    background-color: #212221;
+    background: linear-gradient(to right, #1560bd, #e90);
+    border-radius: 50px;
+    height: 40px;
+    width: 75px;
+    position: relative;
+}
+
+.switchContainer .switch input {
+    -webkit-appearance: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+input::before {
+    background-color: #fff;
+    width: 85%;
+    height: 70%;
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    top: 50%;
+    transform: translate(2px, -60%);
+}
+
+input::after {
+    background: linear-gradient(to right, orange, #8e2de2);
+    content: "";
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(2px, -60%);
+    transition: 1s;
+}
+
+input:checked::after {
+    opacity: 1;
+    transform: translate(160%, -60%);
 }
