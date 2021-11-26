@@ -98,7 +98,7 @@ h1 {
     /* display: flex;
     justify-content: flex-start;
     align-items: center; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .box {
@@ -107,18 +107,21 @@ h1 {
     /* border: 1px solid red; */
     /* margin: 0;
     padding: 0; */
+    display: flex;
+    
 }
 
 .smallBox {
     height: 100%;
     width: 15%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
+    border-right: 2px solid rgb(146, 137, 137);
 }
 
  .smallBox span {
@@ -177,7 +180,9 @@ h1 {
 .article {
     width: 85%;
     height: 100%;
-    border: 1px solid red
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 10px 0 0 10px;
 }
 
 .header {
@@ -227,3 +232,5 @@ p {
     color: skyblue;
     font-weight: bold;
 }
+
+.background
